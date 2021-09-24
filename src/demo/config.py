@@ -1,5 +1,8 @@
-
+from pathlib import Path
 from dynaconf import Dynaconf
+
+
+PROJECT_ROOT = Path(__file__).parents[2]
 
 settings = Dynaconf(
     envvar_prefix="FASTAPI_DEMO",
